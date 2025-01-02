@@ -1,0 +1,13 @@
+#
+# .dockerignore
+# Similar to .gitignore, use a .dockerignore file to tell Docker not to copy unnecessary files and directories into the image. This step is valuable for avoiding the inclusion of local development artifacts like logs, temporary files, or IDE configurations that are not needed in production:
+# See https://docs.docker.com/compose/compose-file/#ignore-external-file
+.git
+.mvn
+mvnw
+mvnw.cmd
+src/
+#target/
+*.log
+Dockerfile*
+docker-compose*
